@@ -1,18 +1,5 @@
-Ultima modificare: 03.03.2019
-
-Continutul repository-ului:
-
- * environment/               - engine-ul jocului (putin modificat pentru a permite evaluarea facila a proiectelor)
- * bots/                      - folder cu botii oficiali
- * replays/                   - folder cu rezultatele rularii botului (fisiere tip *.hlt, comprimate)
- * replays-readable/          - folder cu rezultatele rularii botului (fisiere tip *.hlt, necomprimate)
- * run.py                     - scriptul de evaluare
- * halite-resources.zip       - arhiva cu continutul acestui repository
- * upload_archive.py          - script pentru upload-ul arhivei cu solutia de la etapa curenta pe git
-
-===============
 Prerequisites
-===============
+=============
 
 Pentru rularea scriptului de evaluare aveți nevoie de Python (>= 2.7.2) si cmake (>=3.5).
 
@@ -20,9 +7,9 @@ sudo apt-get install cmake
 
 Evaluarea proiectului se va face pe un sistem Linux, 64 biti.
 
-===============
+
 Creare + testare + upload arhiva
-===============
+================================
 Pentru a usura procesul de corectare, folositi scriptul create_archive.py.
 Acesta construieste arhiva cu solutia pentru etapa curenta si va ofera posibilitatea
 de a o testa/salva pe git.
@@ -45,9 +32,8 @@ Parametrii:
                   folosind scriptul oficial de evaluare.
     -- upload     (Optional) Adauga arhiva pe git, in branch-ul curent.
 
-===============
 Testare
-===============
+=======
 
 Scriptul de evaluare ./run.py va rula "make" înainte de execuția propriu-zisă.
 
